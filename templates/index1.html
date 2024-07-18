@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playground</title>
+    <style>
+        .h1 {
+            color: navy;
+            text-align: center;
+        }
+
+        #con1 {
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .div1 {
+            background-color: #a6c4f4;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin-top: 42px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="h1">Welcome!</h1>
+<div id="con1">
+    {% for i in range(0,num): %}
+        <div class="div1"style="background-color: {{color}};"></div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
